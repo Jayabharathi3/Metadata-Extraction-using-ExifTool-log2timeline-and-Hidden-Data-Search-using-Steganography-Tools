@@ -15,18 +15,18 @@ Apply steganography detection tools like steghide, zsteg, or binwalk to uncover 
 ## PROGRAM:
 Metadata and Timeline Forensics, Steganography Analysis Steps
 - **Installation :**
-  ```bash
+```bash
    sudo apt update
    sudo apt install exiftool -y
    sudo apt install plaso -y
    sudo apt install steghide -y
    sudo apt install binwalk -y
  ```
-- **📂 Extract metadata from a file:**
-  ```bash
-  exiftool example.png
-  exiftool jpg.jpeg
-  ```
+- **Extract metadata from a file:**
+```bash
+  exiftool image path
+  exiftool png.jpeg
+```
 - **Embed data**
   ```
   steghide embed -cf (image path) -ef (text file path)
@@ -41,7 +41,6 @@ Metadata and Timeline Forensics, Steganography Analysis Steps
   ```bash
    binwalk png.jpeg
   ```
-
   
 ## OUTPUT:
 
